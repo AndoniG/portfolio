@@ -1,0 +1,48 @@
+.banner__container {
+  display: grid;
+  height: calc(100vh - 160px);
+  justify-items: center;
+  justify-self: center;
+  align-items: center;
+  color: white;
+  max-width: 1200px;
+}
+
+.banner__content {
+  max-width: 1144px;
+  display: grid;
+  grid-template: 1fr max-content / repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.banner__header {
+  text-align: center;
+}
+
+.banner__header__icon {
+  width: auto;
+  height: 36px;
+}
+
+.banner__avatar {
+  width: auto;
+  height: 280px;
+}
+
+@media screen and (max-width: 1100px) {
+  .banner__content {
+    grid-template: repeat(2, max-content) / 1fr;
+    gap: 50px;
+  }
+
+  .banner__container {
+    align-content: center;
+    height: calc(100vh);
+  }
+
+  .banner__avatar {
+    width: auto;
+    height: 250px;
+  }
+}
