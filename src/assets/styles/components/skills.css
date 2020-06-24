@@ -34,8 +34,8 @@
 }
 
 .skills__carousel:hover .skills__carousel__item:hover {
-  -webkit-transform: scale(1.25) translateX(-10%);
-  transform: scale(1.5) translateX(-10%);
+  -webkit-transform: scale(1.35) translateX(-10%);
+  transform: scale(1.35) translateX(-10%);
   opacity: 1;
   position: relative;
 }
@@ -50,4 +50,13 @@
   transition: 450ms all;
   -webkit-transform-origin: center left;
   transform-origin: center left;
+}
+
+@media screen and (max-width: 576px) {
+  .skills__carousel:hover .skills__carousel__item:hover {
+    -webkit-transform: scale(1.2) translateX(-10%);
+    transform: scale(1.2) translateX(-10%);
+    opacity: 1;
+    position: relative;
+  }
 }
