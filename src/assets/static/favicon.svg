@@ -12,7 +12,7 @@
    viewBox="0 0 36.908 36.908"
    version="1.1"
    id="svg6"
-   sodipodi:docname="portfolio-logo.svg"
+   sodipodi:docname="favicon.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <metadata
      id="metadata12">
@@ -22,6 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -52,5 +53,5 @@
      fill="#ffff"
      id="path2"
      inkscape:connector-curvature="0"
-     style="fill:#ffffff" />
+     style="fill:#000000" />
 </svg>
