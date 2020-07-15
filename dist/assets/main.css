@@ -1,0 +1,257 @@
+@import url(https://fonts.googleapis.com/css2?family=Muli:wght@300;400;600;700&display=swap);
+:root {
+  --main-color: #65c9ff;
+  --secondary-color: white;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  background-color: var(--main-color);
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.8em;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: lighter;
+}
+
+.page__layout {
+  background-image: url("/src/assets/static/background-shapes.svg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: auto;
+  display: grid;
+  grid-auto-rows: min-content;
+  gap: 40px;
+  max-width: 100vw;
+}
+
+.header {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 0px 50px;
+  height: 80px;
+  max-width: 100vw;
+}
+
+.header__content {
+  width: 100%;
+  max-width: 1144px;
+}
+
+.header__img {
+  height: 50px;
+  width: auto;
+}
+
+.banner__container {
+  display: grid;
+  height: calc(100vh - 160px);
+  justify-items: center;
+  justify-self: center;
+  align-items: center;
+  color: white;
+  max-width: 1200px;
+}
+
+.banner__content {
+  max-width: 1144px;
+  display: grid;
+  grid-template: 1fr max-content / repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.banner__header {
+  text-align: center;
+}
+
+.banner__header__icon {
+  width: auto;
+  height: 36px;
+}
+
+.banner__avatar {
+  width: auto;
+  height: 280px;
+}
+
+@media screen and (max-width: 1100px) {
+  .banner__content {
+    grid-template: repeat(2, max-content) / 1fr;
+    gap: 50px;
+  }
+
+  .banner__container {
+    align-content: center;
+    height: calc(100vh);
+  }
+
+  .banner__avatar {
+    width: auto;
+    height: 250px;
+  }
+}
+
+.skills__container {
+  display: grid;
+  height: auto;
+  justify-items: center;
+}
+
+.skills__content {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px 50px;
+  text-align: center;
+}
+
+.skills__carousel {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  justify-items: center;
+  align-items: center;
+  grid-gap: 30px;
+  padding: 0px 15px;
+  transition: 450ms transform;
+  transition: 450ms transform, 450ms -webkit-transform;
+  transition: 450ms -webkit-transform;
+}
+
+.skills__carousel:hover .skills__carousel__item {
+  opacity: 0.3;
+}
+
+.skills__carousel:hover .skills__carousel__item:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+.skills__carousel__item {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 130px;
+  height: auto;
+  max-height: 100px;
+  transition: 450ms all;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.project__item {
+  position: relative;
+  border-radius: 10px;
+  height: 100%;
+  max-height: 300px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 8px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.project__item__image {
+  position: relative;
+  width: auto;
+  height: 100%;
+  z-index: 1;
+  border-radius: 10px;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.4, visibility 0.2;
+  transition: opacity 0.4s, visibility 0.2s;
+}
+
+.project__item:hover > .project__item__image {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.project__item__content {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 8px;
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: grid;
+  align-content: center;
+  grid-auto-rows: max-content;
+  gap: 15px;
+}
+
+.project__item__description {
+  font-weight: bold;
+}
+
+.project__item__action {
+  display: grid;
+  justify-items: center;
+}
+
+.project__item__action > a {
+  cursor: pointer;
+  width: 100%;
+  max-width: 100px;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 10em;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.project__list__container {
+  display: grid;
+  justify-items: center;
+}
+
+.project__list__container > h1 {
+  color: white;
+}
+
+.project__list {
+  display: grid;
+  max-width: 1140px;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  .project__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .project__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+footer {
+  margin-top: 50px;
+  background-color: var(--secondary-color);
+  display: grid;
+  justify-items: center;
+  width: 100%;
+}
+
+footer img {
+  height: 16px;
+}
+
