@@ -11,7 +11,6 @@ export default () => {
   return (
     <div className="page__layout">
       <Helmet>
-        <meta charSet="utf-8" />
         <title>Andoni González | Software engineer</title>
         <meta
           name="description"
