@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import "../assets/styles/containers/Home.css";
+import welcome from "../assets/static/welcome.svg";
 import { Header } from "../components/Header";
 import Banner from "../components/Banner";
 import Skills from "../components/Skills";
@@ -22,10 +23,7 @@ export default () => {
           property="og:description"
           content="Soy un desarrollador de software que disfruta los desafíos y ama lo que hace. ¡Conoce un poco más de mí aquí!"
         />
-        <meta
-          property="og:image"
-          content="https://portfolio.andonig.vercel.app/assets/welcome.svg"
-        />
+        <meta property="og:image" content={welcome} />
         <meta name="twitter:card" content="summary" />
       </Helmet>
       <Header />
