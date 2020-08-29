@@ -17,20 +17,6 @@ export default () => {
           content="https://portfolio.andonig.vercel.app/"
         />
         <meta property="og:type" content="article" />
-        <meta property="og:title" conten="Portafolio de Andoni González" />
-        <meta
-          property="og:description"
-          content="Soy un desarrollador de software que disfruta los desafíos y ama lo que hace. ¡Conoce un poco más de mí aquí!"
-        />
-        <meta
-          property="og:image"
-          content="https://portfolio.andonig.vercel.app/assets/welcome.svg"
-        />
-        <meta name="twitter:card" content="summary" />
-        <meta
-          property="og:url"
-          content="https://portfolio.andonig.vercel.app/"
-        />
         <meta property="og:title" content="Portafolio de Andoni González" />
         <meta
           property="og:description"
@@ -40,6 +26,7 @@ export default () => {
           property="og:image"
           content="https://portfolio.andonig.vercel.app/assets/welcome.svg"
         />
+        <meta name="twitter:card" content="summary" />
       </Helmet>
       <Header />
       <Banner />
